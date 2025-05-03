@@ -1,0 +1,7 @@
+streamlit
+torch
+transformers
+pillow
+openai-whisper  
+pyttsx3
+audio-recorder-streamlit

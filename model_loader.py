@@ -16,6 +16,7 @@ class ModelLoader:
         processor = Blip2Processor.from_pretrained(MODEL_CONFIG["vlm_processor"])
         model = Blip2ForConditionalGeneration.from_pretrained(
             MODEL_CONFIG["vlm_model"], 
-            torch_dtype=torch.float16
+            torch_dtype=torch.float16,
+            device_map="auto"
         )
         return processor, model
